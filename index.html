@@ -1,0 +1,51 @@
+ 
+<!DOCTYPE HTML >
+<html lang="en">
+  <head>
+    <title>
+      Brooklyn Neighborhood
+    </title> 
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+   
+ <body>
+
+    <div class="overlay"> </div>
+    <div class="modal">
+      <table>
+       <tr>
+         <td>
+           <input class="input" data-bind="textInput: searchTerm, valueUpdate: 'keyup'" autocomplete="off" placeholder="Search Brooklyn">
+         </td>
+        </tr>
+      </table>
+      <table data-bind="foreach: searchResults">
+        <tr>
+          <td data-bind="text: name, click: setMarker"></td>
+        </tr>
+      </table>
+      <a href="#" class="link1"><img src="img/up12.png" alt="up"></a>
+    </div>
+    <div class="down" id="down"> 
+      <a href="#" class="link2"><img src="img/down12.png" alt="down" ></a>
+    </div>
+    <div class="down-reset" id="down-reset">
+     <img src="img/reset.png" class="button"  alt="reset" data-bind="click: resetZoom">
+    </div>
+
+   <div class="map" id="map">
+   </div>
+    
+      
+      
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js?"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXcSjm_6gIoo7hrqLZn142XmFDwecjxQI&callback=loadMap" onerror="errorHandling()"
+    async defer></script>
+  </body>      
+</html>    
+  
