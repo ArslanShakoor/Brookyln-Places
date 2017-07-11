@@ -1,13 +1,13 @@
-#Full Stack Nano Degree(Neighborhood Map Project)
+# Full Stack Nano Degree(Neighborhood Map Project)
 
-##how to run
+## How to run
 Just unzip the folder and open the index.html file to see functionality of app
 
-##Short Description: 
+## Short Description: 
 This is the single page application show the most import palces to visit
 in brooklyn using google map api and other 3rd party api
 
-##3:Description and usage:
+## 3:Description and usage:
 In this application Foursquare api and Google Maps api is used to get information
 about the location and information inclues image, address and review for a location
 
